@@ -5,7 +5,7 @@ by: Sergio Andres Castaño Giraldo
 
 def quadratic_equation(a, b, c):
     # calculate the discriminant
-    d = (b*2) - (4*a*c)
+    d = (b**2) - (4*a*c)
 
     # find two solutions
     x1 = (-b-(d)**0.5)/(2*a)

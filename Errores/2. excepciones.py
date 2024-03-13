@@ -14,7 +14,7 @@ def reverse(num):
         #Actualiza la variable
         rev_num = rev_num *10 + digit
 
-        #num = num // 10
+        num = num // 10
         
         #print statement
         #Entender la lógica con digit y num
@@ -23,7 +23,7 @@ def reverse(num):
         #print(f'num  : {num}')
             
     #print statement
-    #print('Salio del While!')
+    print('Salio del While!')
     
 
     return rev_num
