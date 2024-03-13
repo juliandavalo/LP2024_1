@@ -10,7 +10,8 @@ def es_numero_real(numero):
     if numero[0] == '-':
         #tomamos el valor digitado desde el 2 caracter, osea despues del -
         numero = numero[1:]
-        #se busca el primer punto decimal, y lo reemplazamos por una cadena vacia, el 1 es para solo reemplazar el primer punto (.) y evitar errores, para luego poderlo pasar por el isdigit y no tenga errores
+        #se busca el primer punto decimal, y lo reemplazamos por una cadena vacia, el 1 es para solo reemplazar el primer punto (.) y 
+        #evitar errores, para luego poderlo pasar por el isdigit y no tenga errores
     return numero.replace('.', '', 1).isdigit()
 
 # Función para calcular la resistencia total del circuito
@@ -191,6 +192,10 @@ def construir_circuito():
                 print(f"\nTolerancia de las resistencias: {(tolerancia_resistencias*100):.2f}%")
                 print(f"Corriente Resultante: {corriente_formateada}")
                 print(f"Resistencia Total: {formatear_valor_resistencia(resistencia_total)}")
+                print(f"\n\n ------Realizado Por:----------\n")
+                print("Sebastian Orrego Urrea..")
+                print("Alex Mauricio Diaz")
+                print("Julian David Valencia Londoño")
                 break  # Sale del bucle
             else:
                 print("\n-------Debes seleccionar al menos una resistencia--------\n")
